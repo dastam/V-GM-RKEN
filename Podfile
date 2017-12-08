@@ -8,5 +8,6 @@ target 'Vägmärken - Quiz!' do
   # Pods for Vägmärken - Quiz!
 
 pod 'UICircularProgressRing', '~> 1.7'
+pod 'ViewAnimator'
 
 end

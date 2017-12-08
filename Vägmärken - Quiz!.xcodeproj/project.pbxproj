@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		11C982BE52D80B34B1B6B16A /* Pods-Vägmärken - Quiz!.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vägmärken - Quiz!.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vägmärken - Quiz!/Pods-Vägmärken - Quiz!.debug.xcconfig"; sourceTree = "<group>"; };
-		36C5789592E1C86DE1A021DA /* Pods_Va_gma_rken___Quiz_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Va_gma_rken___Quiz_.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36C5789592E1C86DE1A021DA /* Pods_Va_gma_rken___Quiz_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Va_gma_rken___Quiz_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		795B6E175DA5AE76E1C507F7 /* Pods-Vägmärken - Quiz!.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vägmärken - Quiz!.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vägmärken - Quiz!/Pods-Vägmärken - Quiz!.release.xcconfig"; sourceTree = "<group>"; };
 		C20A734D1FAFBD5800F9858B /* SignDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignDetailViewController.swift; sourceTree = "<group>"; };
 		C20A73571FB3B99C00F9858B /* CatArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatArray.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				C2461A021F9637ED00F1444A /* Default-568h@2x.png */,
-				C24619EF1F8EA2B800F1444A /* Vägmärken - Quiz! */,
+				C24619EF1F8EA2B800F1444A /* Vägmärken - Quiz! */,
 				C24619EE1F8EA2B800F1444A /* Products */,
 				C2461A261F96425A00F1444A /* Supporting Files */,
 				C0737B01F20F02F76E854930 /* Pods */,
@@ -123,7 +123,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C24619EF1F8EA2B800F1444A /* Vägmärken - Quiz! */ = {
+		C24619EF1F8EA2B800F1444A /* Vägmärken - Quiz! */ = {
 			isa = PBXGroup;
 			children = (
 				C2461A221F96422700F1444A /* Model */,
@@ -288,10 +288,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Vägmärken - Quiz!/Pods-Vägmärken - Quiz!-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
+				"${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewAnimator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
