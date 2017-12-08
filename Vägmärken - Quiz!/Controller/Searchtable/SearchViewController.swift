@@ -61,7 +61,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-//        searchTable.animate(animations: [animate], duration: 0.5)
+// Setting up animations for the tableView
         searchTable.animateViews(animations: [animate], duration: 0.3, animationInterval: 0.06)
     }
     

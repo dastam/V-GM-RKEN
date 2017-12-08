@@ -74,9 +74,9 @@ class SignDetailViewController: UIViewController {
 
         else if gesture.direction == UISwipeGestureRecognizerDirection.up {
             
-            self.dismiss(animated: true, completion: nil)
         }
         else if gesture.direction == UISwipeGestureRecognizerDirection.down {
+             self.dismiss(animated: true, completion: nil)
         }
     }
 

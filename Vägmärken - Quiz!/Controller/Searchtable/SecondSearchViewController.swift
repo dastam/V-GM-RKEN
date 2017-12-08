@@ -38,6 +38,7 @@ class SecondSearchViewController: UIViewController, UITableViewDelegate, UITable
     var signs = [Signs]()
     var filteredSigns = [Signs]()
     
+    // Setting up animations for the tableView
     let animate = AnimationType.from(direction: .right, offset: 40)
         
     override func viewDidLoad() {
@@ -72,6 +73,7 @@ class SecondSearchViewController: UIViewController, UITableViewDelegate, UITable
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        // Setting up animations for the tableView
         secondSearchTable.animate(animations: [animate])
     
         if !isFiltering() {
