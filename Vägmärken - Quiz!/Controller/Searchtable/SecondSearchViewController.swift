@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ViewAnimator
 
 class SecondSearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -35,8 +36,10 @@ class SecondSearchViewController: UIViewController, UITableViewDelegate, UITable
     var selectedCategoryName: String?
 
     var signs = [Signs]()
-    var filteredSigns = [Signs]() 
-
+    var filteredSigns = [Signs]()
+    
+    let animate = AnimationType.from(direction: .right, offset: 40)
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -68,6 +71,8 @@ class SecondSearchViewController: UIViewController, UITableViewDelegate, UITable
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        secondSearchTable.animate(animations: [animate])
     
         if !isFiltering() {
         switch receivedData {

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ViewAnimator
 
 class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -21,6 +22,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var signs = [CatArray]()
     var filteredCategories = [Signs]()
     var concatenatedSearchArray = [Signs]()
+    let animate = AnimationType.from(direction: .right, offset: 60)
     
     let searchController = UISearchController(searchResultsController: nil)
    
@@ -41,7 +43,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         self.navigationController?.navigationBar.isTranslucent = true
         
-        
         categories = loadData()
         
 
@@ -59,6 +60,9 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+//        searchTable.animate(animations: [animate], duration: 0.5)
+        searchTable.animateViews(animations: [animate], duration: 0.3, animationInterval: 0.06)
     }
     
     
@@ -177,7 +181,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
          tableView.deselectRow(at: indexPath, animated: true)
         
     }
-    
     
     
     // MARK: SIGNARRAY

@@ -33,12 +33,13 @@
 		C27AFFEC1FC5DDCB00524D48 /* QuizStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27AFFEB1FC5DDCB00524D48 /* QuizStats.swift */; };
 		C27AFFED1FC6CBA400524D48 /* UICircularProgressRing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27AFFEE1FC6CBA400524D48 /* UICircularProgressRing.framework */; };
 		C27AFFF01FCB82F100524D48 /* signInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27AFFEF1FCB82F100524D48 /* signInfoCell.swift */; };
+		C2FB0A8E1FDAF1E20027F525 /* ViewAnimator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FB0A8F1FDAF1E20027F525 /* ViewAnimator.framework */; };
 		D74527C1143C317E9BF90E4C /* Pods_Va_gma_rken___Quiz_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C5789592E1C86DE1A021DA /* Pods_Va_gma_rken___Quiz_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11C982BE52D80B34B1B6B16A /* Pods-Vägmärken - Quiz!.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vägmärken - Quiz!.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vägmärken - Quiz!/Pods-Vägmärken - Quiz!.debug.xcconfig"; sourceTree = "<group>"; };
-		36C5789592E1C86DE1A021DA /* Pods_Va_gma_rken___Quiz_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Va_gma_rken___Quiz_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36C5789592E1C86DE1A021DA /* Pods_Va_gma_rken___Quiz_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Va_gma_rken___Quiz_.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		795B6E175DA5AE76E1C507F7 /* Pods-Vägmärken - Quiz!.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vägmärken - Quiz!.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vägmärken - Quiz!/Pods-Vägmärken - Quiz!.release.xcconfig"; sourceTree = "<group>"; };
 		C20A734D1FAFBD5800F9858B /* SignDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignDetailViewController.swift; sourceTree = "<group>"; };
 		C20A73571FB3B99C00F9858B /* CatArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatArray.swift; sourceTree = "<group>"; };
@@ -70,6 +71,7 @@
 		C27AFFEB1FC5DDCB00524D48 /* QuizStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizStats.swift; sourceTree = "<group>"; };
 		C27AFFEE1FC6CBA400524D48 /* UICircularProgressRing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UICircularProgressRing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27AFFEF1FCB82F100524D48 /* signInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInfoCell.swift; sourceTree = "<group>"; };
+		C2FB0A8F1FDAF1E20027F525 /* ViewAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2FB0A8E1FDAF1E20027F525 /* ViewAnimator.framework in Frameworks */,
 				C27AFFED1FC6CBA400524D48 /* UICircularProgressRing.framework in Frameworks */,
 				D74527C1143C317E9BF90E4C /* Pods_Va_gma_rken___Quiz_.framework in Frameworks */,
 			);
@@ -88,6 +91,7 @@
 		22200FBCCA6B19D9DDFB85B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C2FB0A8F1FDAF1E20027F525 /* ViewAnimator.framework */,
 				C27AFFEE1FC6CBA400524D48 /* UICircularProgressRing.framework */,
 				36C5789592E1C86DE1A021DA /* Pods_Va_gma_rken___Quiz_.framework */,
 			);
@@ -107,7 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				C2461A021F9637ED00F1444A /* Default-568h@2x.png */,
-				C24619EF1F8EA2B800F1444A /* Vägmärken - Quiz! */,
+				C24619EF1F8EA2B800F1444A /* Vägmärken - Quiz! */,
 				C24619EE1F8EA2B800F1444A /* Products */,
 				C2461A261F96425A00F1444A /* Supporting Files */,
 				C0737B01F20F02F76E854930 /* Pods */,
@@ -123,7 +127,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C24619EF1F8EA2B800F1444A /* Vägmärken - Quiz! */ = {
+		C24619EF1F8EA2B800F1444A /* Vägmärken - Quiz! */ = {
 			isa = PBXGroup;
 			children = (
 				C2461A221F96422700F1444A /* Model */,

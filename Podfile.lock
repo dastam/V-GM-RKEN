@@ -1,5 +1,5 @@
 PODS:
-  - UICircularProgressRing (1.7.4)
+  - UICircularProgressRing (1.7.5)
   - ViewAnimator (1.0.2)
 
 DEPENDENCIES:
@@ -7,7 +7,7 @@ DEPENDENCIES:
   - ViewAnimator
 
 SPEC CHECKSUMS:
-  UICircularProgressRing: 5aca63423d913dc967661370e94e2af0770dd9cd
+  UICircularProgressRing: b35e45dc82aac8009d038ef4d2e19718675df2bd
   ViewAnimator: d7b18e0be98e05807f61ad886a36363727209377
 
 PODFILE CHECKSUM: 71422e276821fee88a1f1306022ffe16deb6dd0f
