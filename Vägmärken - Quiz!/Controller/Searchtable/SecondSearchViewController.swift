@@ -61,9 +61,8 @@ class SecondSearchViewController: UIViewController, UITableViewDelegate, UITable
         secondSearchTable.delegate = self
         secondSearchTable.dataSource = self
         
-//         changes made
-        secondSearchTable.register(UINib(nibName: "CatTableViewCell", bundle: nil), forCellReuseIdentifier: "newCatCell")
 
+        secondSearchTable.register(UINib(nibName: "CatTableViewCell", bundle: nil), forCellReuseIdentifier: "newCatCell")
 
 
     }
