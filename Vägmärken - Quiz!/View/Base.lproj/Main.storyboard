@@ -515,7 +515,8 @@
                     <connections>
                         <outlet property="infoLabel" destination="SA1-XT-8DP" id="e2X-30-Z3q"/>
                         <outlet property="secondSearchTable" destination="P6x-3M-LdY" id="hse-pq-5Gv"/>
-                        <segue destination="1Qv-gu-zVI" kind="presentation" identifier="signDetail" id="ppP-8h-Jbq"/>
+                        <segue destination="1Qv-gu-zVI" kind="presentation" identifier="signDetailOLD" id="ppP-8h-Jbq"/>
+                        <segue destination="TRn-nd-Tjy" kind="presentation" identifier="signDetail" id="4vQ-uC-5kc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BoS-3x-o1m" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -579,6 +580,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GxD-yN-TwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2837.5999999999999" y="-734.48275862068976"/>
+        </scene>
+        <!--Detail View-->
+        <scene sceneID="JFF-T5-H8L">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="TRn-nd-Tjy" customClass="DetailView" customModule="Va_gma_rken___Quiz_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="13L-cv-Um1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iep-0R-yUl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="yt5-gd-T85" customClass="CenterCellCollectionViewFlowLayout" customModule="Va_gma_rken___Quiz_" customModuleProvider="target">
+                                    <size key="itemSize" width="240" height="278"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="TRn-nd-Tjy" id="wbP-Kw-gyd"/>
+                                    <outlet property="delegate" destination="TRn-nd-Tjy" id="arc-nk-Z8o"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iep-0R-yUl" firstAttribute="top" secondItem="13L-cv-Um1" secondAttribute="top" id="9Hd-Fb-Yct"/>
+                            <constraint firstItem="iep-0R-yUl" firstAttribute="trailing" secondItem="OQO-yq-4MR" secondAttribute="trailing" id="akP-dO-Lkw"/>
+                            <constraint firstItem="iep-0R-yUl" firstAttribute="bottom" secondItem="OQO-yq-4MR" secondAttribute="bottom" id="cNy-hS-UB4"/>
+                            <constraint firstItem="iep-0R-yUl" firstAttribute="leading" secondItem="OQO-yq-4MR" secondAttribute="leading" id="uPe-yC-qCD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OQO-yq-4MR"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="iep-0R-yUl" id="pBD-ig-ndI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MXF-tZ-iBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3624.8000000000002" y="-734.48275862068976"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SHw-0r-KJ2">

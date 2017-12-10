@@ -179,7 +179,7 @@ class SecondSearchViewController: UIViewController, UITableViewDelegate, UITable
         let indexPath = secondSearchTable.indexPathForSelectedRow
         guard let selectedRow = indexPath?.row else { return }
         
-            let secondVC = segue.destination as! SignDetailViewController
+            let secondVC = segue.destination as! DetailView
             
             secondVC.receivedData = 0
             
@@ -194,6 +194,7 @@ class SecondSearchViewController: UIViewController, UITableViewDelegate, UITable
                     secondVC.passedSign.signExpl = selectedSign.signExpl
                     secondVC.passedSign.text = selectedSign.text
                     
+                    secondVC.indexpath = indexPath!
                     secondVC.passedSignsArray = filteredSigns
                     
                 } else {
@@ -203,6 +204,7 @@ class SecondSearchViewController: UIViewController, UITableViewDelegate, UITable
                     secondVC.passedSign.signExpl = selectedSign.signExpl
                     secondVC.passedSign.text = selectedSign.text
                     
+                    secondVC.indexpath = indexPath!
                     secondVC.passedSignsArray = signs
         }
         
