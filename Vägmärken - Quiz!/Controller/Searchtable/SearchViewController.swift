@@ -126,11 +126,13 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
             let indexPath = searchTable.indexPathForSelectedRow
             guard let selectedRow = indexPath?.row else { return }
             
-            let secondVC = segue.destination as! SignDetailViewController
+            let secondVC = segue.destination as! DetailView
             
             secondVC.receivedData = 0
             
             secondVC.receivedData = selectedRow
+            
+            
             
             let selectedSign: Signs
             
@@ -138,6 +140,9 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 secondVC.passedSign.correctAnswer = selectedSign.correctAnswer
                 secondVC.passedSign.signExpl = selectedSign.signExpl
                 secondVC.passedSign.text = selectedSign.text
+            
+                secondVC.indexpath = indexPath!
+                secondVC.passedSignsArray = filteredCategories
             
         } else if segue.identifier == "searchSegue" {
             let indexPath = searchTable.indexPathForSelectedRow

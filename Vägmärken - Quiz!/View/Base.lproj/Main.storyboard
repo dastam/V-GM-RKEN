@@ -471,7 +471,7 @@
                     <connections>
                         <outlet property="searchTable" destination="gh4-IL-MSs" id="xds-Nm-TzR"/>
                         <segue destination="Dqd-nG-Tmj" kind="show" identifier="searchSegue" id="evT-C0-a8Y"/>
-                        <segue destination="TRn-nd-Tjy" kind="presentation" identifier="signDetail" id="zDK-E2-Jfi"/>
+                        <segue destination="TRn-nd-Tjy" kind="presentation" identifier="firstSignDetail" id="zDK-E2-Jfi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mgN-EN-7Dd" userLabel="First Responder" sceneMemberID="firstResponder"/>
