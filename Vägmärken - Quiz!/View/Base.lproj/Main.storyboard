@@ -16,7 +16,6 @@
         </array>
         <array key="AvenirNext.ttc">
             <string>AvenirNext-Medium</string>
-            <string>AvenirNext-Regular</string>
         </array>
         <array key="Helvetica.ttc">
             <string>Helvetica-Bold</string>
@@ -472,7 +471,7 @@
                     <connections>
                         <outlet property="searchTable" destination="gh4-IL-MSs" id="xds-Nm-TzR"/>
                         <segue destination="Dqd-nG-Tmj" kind="show" identifier="searchSegue" id="evT-C0-a8Y"/>
-                        <segue destination="1Qv-gu-zVI" kind="presentation" identifier="firstSignDetail" id="dSo-3V-wKb"/>
+                        <segue destination="TRn-nd-Tjy" kind="presentation" identifier="signDetail" id="zDK-E2-Jfi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mgN-EN-7Dd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -515,71 +514,12 @@
                     <connections>
                         <outlet property="infoLabel" destination="SA1-XT-8DP" id="e2X-30-Z3q"/>
                         <outlet property="secondSearchTable" destination="P6x-3M-LdY" id="hse-pq-5Gv"/>
-                        <segue destination="1Qv-gu-zVI" kind="presentation" identifier="signDetailOLD" id="ppP-8h-Jbq"/>
                         <segue destination="TRn-nd-Tjy" kind="presentation" identifier="signDetail" id="4vQ-uC-5kc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BoS-3x-o1m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2077.5999999999999" y="-734.48275862068976"/>
-        </scene>
-        <!--Sign Detail View Controller-->
-        <scene sceneID="iwl-ET-Lpl">
-            <objects>
-                <viewController modalPresentationStyle="overFullScreen" id="1Qv-gu-zVI" customClass="SignDetailViewController" customModule="Va_gma_rken___Quiz_" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="MHJ-Pg-aCE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" editable="NO" text="Märket anger en farlig kurva samt kurvans riktning." selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EF4-Yk-WMe">
-                                <rect key="frame" x="16" y="257" width="343" height="410"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Varning för farlig kurva" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdz-Pk-B59">
-                                <rect key="frame" x="0.0" y="37" width="375" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="375" id="1h1-za-6nm"/>
-                                    <constraint firstAttribute="height" constant="64" id="bOe-Np-Up2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a1-1" translatesAutoresizingMaskIntoConstraints="NO" id="s85-Xb-EbJ">
-                                <rect key="frame" x="109" y="109" width="157" height="133"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="s85-Xb-EbJ" secondAttribute="height" multiplier="157:133" id="8Vt-Fw-heh"/>
-                                    <constraint firstAttribute="height" constant="133" id="Mil-Kb-aQL"/>
-                                    <constraint firstAttribute="width" constant="157" id="kUR-rf-pEw"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="s85-Xb-EbJ" firstAttribute="top" secondItem="pdz-Pk-B59" secondAttribute="bottom" constant="8" id="B2u-qn-CUk"/>
-                            <constraint firstItem="EF4-Yk-WMe" firstAttribute="leading" secondItem="YEK-af-GY3" secondAttribute="leading" constant="16" id="KMn-xh-6JH"/>
-                            <constraint firstItem="EF4-Yk-WMe" firstAttribute="bottom" secondItem="YEK-af-GY3" secondAttribute="bottom" id="Uo0-KS-lh5"/>
-                            <constraint firstItem="EF4-Yk-WMe" firstAttribute="top" secondItem="s85-Xb-EbJ" secondAttribute="bottom" constant="15" id="V2X-Wn-Jcs"/>
-                            <constraint firstItem="pdz-Pk-B59" firstAttribute="top" secondItem="YEK-af-GY3" secondAttribute="top" constant="17" id="h4d-4j-T0y"/>
-                            <constraint firstItem="YEK-af-GY3" firstAttribute="trailing" secondItem="s85-Xb-EbJ" secondAttribute="trailing" constant="109" id="mjA-Ya-SGb"/>
-                            <constraint firstItem="pdz-Pk-B59" firstAttribute="leading" secondItem="YEK-af-GY3" secondAttribute="leading" id="nAr-0M-vJB"/>
-                            <constraint firstItem="pdz-Pk-B59" firstAttribute="trailing" secondItem="YEK-af-GY3" secondAttribute="trailing" id="qId-kV-3Q1"/>
-                            <constraint firstItem="YEK-af-GY3" firstAttribute="trailing" secondItem="EF4-Yk-WMe" secondAttribute="trailing" constant="16" id="v1X-Cn-jyK"/>
-                            <constraint firstItem="s85-Xb-EbJ" firstAttribute="leading" secondItem="YEK-af-GY3" secondAttribute="leading" constant="109" id="yp5-Qq-rPu"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="YEK-af-GY3"/>
-                    </view>
-                    <connections>
-                        <outlet property="signHeadline" destination="pdz-Pk-B59" id="fUJ-hU-e8z"/>
-                        <outlet property="signImage" destination="s85-Xb-EbJ" id="q7R-Bx-ige"/>
-                        <outlet property="signLabel" destination="EF4-Yk-WMe" id="n59-kc-Zf8"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GxD-yN-TwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2837.5999999999999" y="-734.48275862068976"/>
         </scene>
         <!--Detail View-->
         <scene sceneID="JFF-T5-H8L">
@@ -592,7 +532,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iep-0R-yUl">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="yt5-gd-T85" customClass="CenterCellCollectionViewFlowLayout" customModule="Va_gma_rken___Quiz_" customModuleProvider="target">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="yt5-gd-T85">
                                     <size key="itemSize" width="240" height="278"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -620,7 +560,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MXF-tZ-iBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3624.8000000000002" y="-734.48275862068976"/>
+            <point key="canvasLocation" x="2929" y="-734"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SHw-0r-KJ2">
@@ -670,6 +610,6 @@
         <image name="quizBild" width="1067" height="1067"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ppP-8h-Jbq"/>
+        <segue reference="zDK-E2-Jfi"/>
     </inferredMetricsTieBreakers>
 </document>

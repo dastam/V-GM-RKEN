@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailView: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UICollectionViewDataSource {
+class DetailView: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -16,11 +16,14 @@ class DetailView: UIViewController, UICollectionViewDelegateFlowLayout, UICollec
     var passedSign = Signs(text: "", correctAnswer: #imageLiteral(resourceName: "a14"), signExpl: "")
     var passedSignsArray = [Signs]()
     var indexpath = IndexPath()
+    var initialScrollDone: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
-
+        self.collectionView.isPagingEnabled = true
+        self.collectionView?.frame = view.frame.insetBy(dx: -20.0, dy: 0.0)
+       
         
         let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(handleGesture))
         swipeUp.direction = .up
@@ -28,9 +31,18 @@ class DetailView: UIViewController, UICollectionViewDelegateFlowLayout, UICollec
         
         collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "customCell")
     
-        
-    
         // Do any additional setup after loading the view.
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        if !self.initialScrollDone {
+            
+        self.collectionView.scrollToItem(at: indexpath, at: UICollectionViewScrollPosition.centeredHorizontally, animated: false)
+            initialScrollDone = true
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -48,8 +60,8 @@ class DetailView: UIViewController, UICollectionViewDelegateFlowLayout, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let itemWidth = collectionView.bounds.width
-        let itemHeight = collectionView.bounds.height
+        let itemWidth = collectionView.frame.size.width
+        let itemHeight = collectionView.frame.size.height
         return CGSize(width: itemWidth, height: itemHeight)
     }
     
@@ -62,21 +74,6 @@ class DetailView: UIViewController, UICollectionViewDelegateFlowLayout, UICollec
         cell.signHeadline.text = passedSignsArray[indexPath.row].text
         
         return cell
-    }
-
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        var insets = self.collectionView.contentInset
-        let value = (self.collectionView.frame.size.width - (self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout).itemSize.width) * 0.5
-        insets.left = value
-        insets.right = value
-        self.collectionView.contentInset = insets
-        self.collectionView.decelerationRate = UIScrollViewDecelerationRateFast
-    
-        self.collectionView.scrollToItem(at: indexpath, at: UICollectionViewScrollPosition.centeredHorizontally, animated: false)
-        
-    
     }
     
     
