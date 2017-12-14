@@ -7,6 +7,7 @@
 
 import UIKit
 import ViewAnimator
+import BulletinBoard
 
 class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -25,7 +26,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     let animate = AnimationType.from(direction: .right, offset: 60)
     
     let searchController = UISearchController(searchResultsController: nil)
-   
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +45,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         categories = loadData()
         
+        
 
 //        Returning a concatenated array of signs in all categories - when user search signs, they will be able to search all signs in all categories.
         concatenatedSearchArray = categories.flatMap { $0.signs }
@@ -56,6 +57,8 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         searchTable.register(UINib(nibName: "CatTableViewCell", bundle: nil), forCellReuseIdentifier: "newCatCell")
         // Do any additional setup after loading the view.
+        
+
     }
     
     override func viewWillAppear(_ animated: Bool) {

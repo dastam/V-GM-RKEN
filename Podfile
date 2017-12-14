@@ -9,5 +9,6 @@ target 'Vägmärken - Quiz!' do
 
 pod 'UICircularProgressRing', '~> 1.7'
 pod 'ViewAnimator'
+pod 'BulletinBoard'
 
 end

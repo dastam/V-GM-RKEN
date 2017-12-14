@@ -12,13 +12,14 @@ class QuizWelcome: UIViewController {
 
     @IBOutlet weak var continueButton: UIButton!
     
-
+    let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore1")
     
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
-
+        
         continueButton.layer.borderWidth = 2.0
         continueButton.layer.cornerRadius = continueButton.frame.size.height/2
         continueButton.layer.borderColor = Colors.twitterBlue.cgColor
@@ -29,10 +30,17 @@ class QuizWelcome: UIViewController {
         
         // Do any additional setup after loading the view.
         
-
+        if launchedBefore  {
+            print("Not first launch.")
+        } else {
+            print("First launch, setting UserDefault.")
+            UserDefaults.standard.set(true, forKey: "launchedBefore1")
+        }
         
     }
-
+    
+   
+  
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.isNavigationBarHidden = true
