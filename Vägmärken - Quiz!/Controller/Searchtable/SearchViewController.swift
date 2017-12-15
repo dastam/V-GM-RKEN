@@ -195,7 +195,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func loadData() -> [CatArray] {
         
-        //        MARK: - VARNINGSMÄRKEN 12ST
+        //        MARK: - VARNINGSMÄRKEN 13ST
         
         let sign1 = Signs(text: "Varning för farlig kurva", correctAnswer: #imageLiteral(resourceName: "a1-1"), signExpl: "Märket anger en farlig kurva samt kurvans riktning.")
         
@@ -340,6 +340,10 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         """)
         
         let sign48 = Signs(text: "Varning för annan fara", correctAnswer: #imageLiteral(resourceName: "a40-1"), signExpl: "Märket anger annan fara än sådan som kan anges med något annat varningsmärke.  Farans art anges på en tilläggstavla.")
+        
+        let sign367 = Signs(text: "Varning för olycka", correctAnswer: #imageLiteral(resourceName: "a41"), signExpl: """
+        Vägmärket varnar för en olycka lite längre fram på vägen.
+        """)
         
         //        MARK: VÄJNINGSPLIKT *******************************
         
@@ -1757,6 +1761,12 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         Tavlan används under märke \"Parkering\", och anger att endast fordon med möjlighet till extern laddning av elektricitet för fordonets framdrivning får parkera.
         """)
         
+        let sign368 = Signs(text: "Öppet dygnet runt", correctAnswer: #imageLiteral(resourceName: "t25"), signExpl: """
+        Tavlan anger att en servering eller restaurang är öppen dygnet runt.
+
+        Tavlan används under något av märkena \"Servering\", eller \"Restaurang\".
+        """)
+        
         //        MARK: TRAFIKSIGNALER
         
         let sign292 = Signs(text: "Rött", correctAnswer: #imageLiteral(resourceName: "sig1-1"), signExpl: """
@@ -2256,10 +2266,9 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         """)
 
         
-        
         //        MARK: ***** KATEGORIER *****
   
-        let Varningsmärken = CatArray(signText: "Varningsmärken", image: #imageLiteral(resourceName: "a1-1"), signs: [sign1, sign2, sign3, sign4, sign5, sign21, sign22, sign6, sign9, sign23, sign24, sign25, sign12, sign26, sign27, sign28, sign29, sign30, sign31, sign32, sign33, sign34, sign35, sign36, sign37, sign38, sign39, sign10, sign11, sign40, sign41, sign42, sign43, sign44, sign7, sign8, sign45, sign46, sign47, sign48])
+        let Varningsmärken = CatArray(signText: "Varningsmärken", image: #imageLiteral(resourceName: "a1-1"), signs: [sign1, sign2, sign3, sign4, sign5, sign21, sign22, sign6, sign9, sign23, sign24, sign25, sign12, sign26, sign27, sign28, sign29, sign30, sign31, sign32, sign33, sign34, sign35, sign36, sign37, sign38, sign39, sign10, sign11, sign40, sign41, sign42, sign43, sign44, sign7, sign8, sign45, sign46, sign47, sign48, sign367])
         
         
         let Väjningsplikt = CatArray(signText: "Väjningsplikt", image: #imageLiteral(resourceName: "b1-1"), signs: [sign13, sign14, sign15, sign16, sign17, sign18, sign19, sign20])
@@ -2295,7 +2304,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let Symboler = CatArray(signText: "Symboler", image: #imageLiteral(resourceName: "s1.1"), signs: [sign246, sign247, sign248, sign249])
         
         
-        let Tilläggstavlor = CatArray(signText: "Tilläggstavlor", image: #imageLiteral(resourceName: "t9-1"), signs: [sign250, sign251, sign252, sign253, sign254, sign255, sign256, sign257, sign258, sign259, sign260, sign261, sign262, sign263, sign264, sign265, sign266, sign267, sign268, sign269, sign270, sign271, sign272, sign273, sign274, sign275, sign276, sign277, sign278, sign279, sign280, sign281, sign282, sign283, sign284, sign285, sign286, sign287, sign288, sign289, sign290, sign291])
+        let Tilläggstavlor = CatArray(signText: "Tilläggstavlor", image: #imageLiteral(resourceName: "t9-1"), signs: [sign250, sign251, sign252, sign253, sign254, sign255, sign256, sign257, sign258, sign259, sign260, sign261, sign262, sign263, sign264, sign265, sign266, sign267, sign268, sign269, sign270, sign271, sign272, sign273, sign274, sign275, sign276, sign277, sign278, sign279, sign280, sign281, sign282, sign283, sign284, sign285, sign286, sign287, sign288, sign289, sign290, sign291, sign368])
         
         let Trafiksignaler = CatArray(signText: "Trafiksignaler", image: #imageLiteral(resourceName: "sig1-1"), signs: [sign292, sign293, sign294, sign295, sign296, sign297, sign298, sign299, sign300, sign301, sign302, sign303, sign304, sign305, sign306, sign307, sign308])
         

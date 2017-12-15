@@ -11,8 +11,6 @@ import UICircularProgressRing
 import Cheers
 
 class QuizStats: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-
-    let confetti = CheerView()
     
     
     @IBOutlet weak var restartButton: UIButton!
@@ -25,19 +23,22 @@ class QuizStats: UIViewController, UICollectionViewDataSource, UICollectionViewD
     var scorePercentage: Float = 0
     var needPractice: [Question] = []
     
+    let confetti = CheerView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        Setting up confetti
         confetti.config.particle = .confetti
         confetti.config.colors = [UIColor.red, UIColor.cyan, UIColor.green, UIColor.yellow, UIColor.blue, UIColor.magenta, UIColor.orange]
         confetti.frame = view.frame
+        
+        
         navigationItem.title = "Resultat"
         self.navigationItem.setHidesBackButton(true, animated:true);
         
         resultsLabel.text = "Resultat: \(Int(score)) av \(totalNumberOfQuestions) rätt"
         
-        
-        // Do any additional setup after loading the view.
         
         view.addSubview(confetti)
         awesomeLabel()

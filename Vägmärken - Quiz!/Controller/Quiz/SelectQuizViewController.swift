@@ -15,8 +15,6 @@ class SelectQuizViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var quizTableView: UITableView!
     
     
-//    lazy var switches : [UISwitch] = [self.switch1, self.switch2, self.switch3, self.switch4]
-    
     var quizCategories = [QuestionArray]()
     var pickedCategory: Int = 0
     var categoryID: [Int] = []
@@ -312,6 +310,27 @@ class SelectQuizViewController: UIViewController, UITableViewDelegate, UITableVi
        
         let question86 = Question(text: "Slut på område", optionA: "e21-1", optionB: "e6-1", optionC: "e10-1", optionD: "e14-1", correctAnswer: "1", correctImageName: "e21-1")
         
+//        LOKALISERINGSFRÅGOR
+        
+        let question87 = Question(text: "Orienteringstavla", optionA: "f23-1", optionB: "f11-1", optionC: "f1-1", optionD: "f18-5", correctAnswer: "3", correctImageName: "f1-1")
+        
+        let question88 = Question(text: "Vägvisare", optionA: "f5-1", optionB: "f16-4", optionC: "f21-1", optionD: "f25-1", correctAnswer: "1", correctImageName: "f5-1")
+        
+        let question89 = Question(text: "Platsmärke", optionA: "f11-1", optionB: "f13-1", optionC: "f10-1", optionD: "f22-1", correctAnswer: "3", correctImageName: "f10-1")
+        
+        let question90 = Question(text: "Vägnamn", optionA: "f14-1", optionB: "f11-1", optionC: "f5-1", optionD: "f10-1", correctAnswer: "2", correctImageName: "f11-1")
+        
+        let question91 = Question(text: "Ökning av antal körfält", optionA: "f20-1", optionB: "f19-1", optionC: "f16-2", optionD: "f17-2", correctAnswer: "3", correctImageName: "f16-2")
+        
+        let question92 = Question(text: "Trafikplatsnummer", optionA: "f14-1", optionB: "f15-1", optionC: "f27-1", optionD: "f33-1", correctAnswer: "3", correctImageName: "f27-1")
+        
+        let question93 = Question(text: "Turistväg", optionA: "i3-1", optionB: "i4-1", optionC: "i2-1", optionD: "i1-1", correctAnswer: "4", correctImageName: "i1-1")
+        
+        let question94 = Question(text: "Turistområde", optionA: "i2-1", optionB: "i1-1", optionC: "i4-1", optionD: "i3-1", correctAnswer: "1", correctImageName: "i2-1")
+        
+        let question95 = Question(text: "Landmärke", optionA: "i4-1", optionB: "i3-1", optionC: "i1-1", optionD: "i2-1", correctAnswer: "2", correctImageName: "i3-1")
+        
+        let question96 = Question(text: "Världsarv", optionA: "i3-1", optionB: "i2-1", optionC: "i1-1", optionD: "i4-1", correctAnswer: "4", correctImageName: "i4-1")
         
         
 //        FrågeKategorier
@@ -321,8 +340,17 @@ class SelectQuizViewController: UIViewController, UITableViewDelegate, UITableVi
         let förbudsFrågor = QuestionArray(category: "Förbudsmärken", catImage: #imageLiteral(resourceName: "c1-1"), questions: [question21, question22, question23, question24, question25, question26, question27, question28, question29, question30, question31, question32, question33, question34, question35, question36, question37, question38, question39, question40, question41, question42, question43, question44, question45, question46, question47, question48, question49, question50, question51, question52, question53, question54, question55, question56, question57, question58])
         let påbudsFrågor = QuestionArray(category: "Påbudsmärken", catImage: #imageLiteral(resourceName: "d1-1"), questions: [question59, question60, question61, question62, question63, question64, question65, question66, question67])
         let anvisningsFrågor = QuestionArray(category: "Anvisningsmärken", catImage: #imageLiteral(resourceName: "e1-1"), questions: [question68, question69, question70, question71, question72, question73, question74, question75, question76, question77, question78, question79, question80, question81, question82, question83, question84, question85, question86])
+        let lokaliseringsFrågor = QuestionArray(category: "Lokaliseringsmärken", catImage: #imageLiteral(resourceName: "f14-1"), questions: [question87, question88, question89, question90, question91, question92, question93, question94, question95, question96])
        
-            return [varningsFrågor, väjningsFrågor, förbudsFrågor, påbudsFrågor, anvisningsFrågor]
+            return [
+                    varningsFrågor,
+                    väjningsFrågor,
+                    förbudsFrågor,
+                    påbudsFrågor,
+                    anvisningsFrågor,
+                    lokaliseringsFrågor,
+        
+                ]
     }
 
     
