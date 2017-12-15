@@ -227,3 +227,16 @@ class ViewController: UIViewController {
     
 
 }
+
+
+
+extension Array {
+    public mutating func shuffle() {
+        for i in stride(from: count - 1, through: 1, by: -1) {
+            let random = Int(arc4random_uniform(UInt32(i+1)))
+            if i != random {
+                self.swapAt(i, random)
+            }
+        }
+    }
+}

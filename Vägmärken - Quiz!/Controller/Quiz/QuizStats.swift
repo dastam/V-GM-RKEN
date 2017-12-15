@@ -8,9 +8,12 @@
 
 import UIKit
 import UICircularProgressRing
+import Cheers
 
 class QuizStats: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
+    let confetti = CheerView()
+    
     
     @IBOutlet weak var restartButton: UIButton!
     @IBOutlet weak var resultsLabel: UILabel!
@@ -25,6 +28,9 @@ class QuizStats: UIViewController, UICollectionViewDataSource, UICollectionViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        confetti.config.particle = .confetti
+        confetti.config.colors = [UIColor.red, UIColor.cyan, UIColor.green, UIColor.yellow, UIColor.blue, UIColor.magenta, UIColor.orange]
+        confetti.frame = view.frame
         navigationItem.title = "Resultat"
         self.navigationItem.setHidesBackButton(true, animated:true);
         
@@ -33,8 +39,8 @@ class QuizStats: UIViewController, UICollectionViewDataSource, UICollectionViewD
         
         // Do any additional setup after loading the view.
         
-        
-        
+        view.addSubview(confetti)
+        awesomeLabel()
     }
     
     
@@ -62,9 +68,12 @@ class QuizStats: UIViewController, UICollectionViewDataSource, UICollectionViewD
         restartButton.layer.borderWidth = 2.0
         restartButton.layer.cornerRadius = restartButton.frame.size.height/2
         
-        if needPractice.count <= 0 {
-            practiceLabel.isEnabled = false
-        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(false)
+        
+        confetti.stop()
     }
 
     
@@ -84,6 +93,15 @@ class QuizStats: UIViewController, UICollectionViewDataSource, UICollectionViewD
         practiceLabel.text = needPractice[indexPath.row].text
     }
     
+    func awesomeLabel() {
+        
+        if needPractice.count == 0 {
+
+            practiceLabel.text = "Alla rätt! Snyggt jobbat!"
+            confetti.start()
+        }
+        
+    }
     
     
     @IBAction func restartButton(_ sender: UIButton) {

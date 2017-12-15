@@ -24,6 +24,7 @@
 		C24FD0811FACD7A0001BA0D5 /* CatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C24FD07F1FACD7A0001BA0D5 /* CatTableViewCell.xib */; };
 		C24FD0851FACE170001BA0D5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD0841FACE170001BA0D5 /* SearchViewController.swift */; };
 		C24FD0871FACF427001BA0D5 /* SecondSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD0861FACF427001BA0D5 /* SecondSearchViewController.swift */; };
+		C2557D411FE3489800EC8571 /* Cheers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2557D421FE3489800EC8571 /* Cheers.framework */; };
 		C27224471FB90527000EED55 /* SelectQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27224461FB90527000EED55 /* SelectQuizViewController.swift */; };
 		C27224491FB90E41000EED55 /* QuestionStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27224481FB90E41000EED55 /* QuestionStruct.swift */; };
 		C272244B1FB90EA2000EED55 /* QuestionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272244A1FB90EA2000EED55 /* QuestionArray.swift */; };
@@ -67,6 +68,8 @@
 		C24FD07F1FACD7A0001BA0D5 /* CatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatTableViewCell.xib; sourceTree = "<group>"; };
 		C24FD0841FACE170001BA0D5 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C24FD0861FACF427001BA0D5 /* SecondSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSearchViewController.swift; sourceTree = "<group>"; };
+		C2557D401FE3447800EC8571 /* SAConfettiView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SAConfettiView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2557D421FE3489800EC8571 /* Cheers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cheers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27224461FB90527000EED55 /* SelectQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuizViewController.swift; sourceTree = "<group>"; };
 		C27224481FB90E41000EED55 /* QuestionStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionStruct.swift; sourceTree = "<group>"; };
 		C272244A1FB90EA2000EED55 /* QuestionArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionArray.swift; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 		C27AFFEB1FC5DDCB00524D48 /* QuizStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizStats.swift; sourceTree = "<group>"; };
 		C27AFFEE1FC6CBA400524D48 /* UICircularProgressRing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UICircularProgressRing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27AFFEF1FCB82F100524D48 /* signInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInfoCell.swift; sourceTree = "<group>"; };
+		C29E87401FE3411500F9B367 /* SAConfettiView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SAConfettiView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2C89A731FE17C9400F4132C /* BulletinDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletinDataSource.swift; sourceTree = "<group>"; };
 		C2FB0A8F1FDAF1E20027F525 /* ViewAnimator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewAnimator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -89,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2557D411FE3489800EC8571 /* Cheers.framework in Frameworks */,
 				C204E0331FE15B2F00E27C5F /* BulletinBoard.framework in Frameworks */,
 				C2FB0A8E1FDAF1E20027F525 /* ViewAnimator.framework in Frameworks */,
 				C27AFFED1FC6CBA400524D48 /* UICircularProgressRing.framework in Frameworks */,
@@ -102,6 +107,9 @@
 		22200FBCCA6B19D9DDFB85B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C2557D421FE3489800EC8571 /* Cheers.framework */,
+				C2557D401FE3447800EC8571 /* SAConfettiView.framework */,
+				C29E87401FE3411500F9B367 /* SAConfettiView.framework */,
 				C204E0341FE15B2F00E27C5F /* BulletinBoard.framework */,
 				C2FB0A8F1FDAF1E20027F525 /* ViewAnimator.framework */,
 				C27AFFEE1FC6CBA400524D48 /* UICircularProgressRing.framework */,
@@ -317,12 +325,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Vägmärken - Quiz!/Pods-Vägmärken - Quiz!-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BulletinBoard/BulletinBoard.framework",
+				"${BUILT_PRODUCTS_DIR}/Cheers/Cheers.framework",
 				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
 				"${BUILT_PRODUCTS_DIR}/ViewAnimator/ViewAnimator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BulletinBoard.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cheers.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ViewAnimator.framework",
 			);

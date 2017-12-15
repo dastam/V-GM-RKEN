@@ -1,18 +1,21 @@
 PODS:
   - BulletinBoard (1.3.0)
+  - Cheers (2.0.0)
   - UICircularProgressRing (1.7.5)
   - ViewAnimator (1.0.2)
 
 DEPENDENCIES:
   - BulletinBoard
-  - UICircularProgressRing (~> 1.7)
+  - Cheers
+  - UICircularProgressRing
   - ViewAnimator
 
 SPEC CHECKSUMS:
   BulletinBoard: 23c9d98cac654fd484d76f2a0655669974e9bd9c
+  Cheers: bacb4a95f04cf0fa25ee7f78e900c71eca8673ba
   UICircularProgressRing: b35e45dc82aac8009d038ef4d2e19718675df2bd
   ViewAnimator: d7b18e0be98e05807f61ad886a36363727209377
 
-PODFILE CHECKSUM: 165bd0c592465c37d42369591770104a75596145
+PODFILE CHECKSUM: 79775ea315746217e75a043d496cb4dc28495495
 
 COCOAPODS: 1.3.1
