@@ -333,6 +333,8 @@ class SelectQuizViewController: UIViewController, UITableViewDelegate, UITableVi
         let question96 = Question(text: "Världsarv", optionA: "i3-1", optionB: "i2-1", optionC: "i1-1", optionD: "i4-1", correctAnswer: "4", correctImageName: "i4-1")
         
         
+        
+        
 //        FrågeKategorier
         
         let varningsFrågor = QuestionArray(category: "Varningsmärken", catImage: #imageLiteral(resourceName: "a1-1"), questions: [question1, question2, question3, question4, question5, question6, question7, question8, question9, question10, question11, question20])

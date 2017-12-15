@@ -117,6 +117,7 @@ class DetailView: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+       
         
         if !self.initialScrollDone {
             

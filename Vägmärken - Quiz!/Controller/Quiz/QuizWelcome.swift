@@ -12,9 +12,6 @@ class QuizWelcome: UIViewController {
 
     @IBOutlet weak var continueButton: UIButton!
     
-    let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore1")
-    
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,13 +26,6 @@ class QuizWelcome: UIViewController {
         
         
         // Do any additional setup after loading the view.
-        
-        if launchedBefore  {
-            print("Not first launch.")
-        } else {
-            print("First launch, setting UserDefault.")
-            UserDefaults.standard.set(true, forKey: "launchedBefore1")
-        }
         
     }
     
