@@ -1,0 +1,6 @@
+framework module Pods_Va_gma_rken {
+  umbrella header "Pods-Vägmärken-umbrella.h"
+
+  export *
+  module * { export * }
+}
