@@ -165,6 +165,8 @@ class DetailView: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         cell.signLabel.flashScrollIndicators()
         }
         
+    
+        
         return cell
     }
     
