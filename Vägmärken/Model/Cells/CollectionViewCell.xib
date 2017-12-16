@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="customCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="Va_gma_rken" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjD-Kx-jcL">
+                        <rect key="frame" x="20" y="307" width="335" height="360"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="brJ-u1-0CZ">
+                        <rect key="frame" x="109" y="100" width="157" height="133"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="157" id="c01-Gr-s3y"/>
+                            <constraint firstAttribute="height" constant="133" id="dY3-AY-V6I"/>
+                            <constraint firstAttribute="width" secondItem="brJ-u1-0CZ" secondAttribute="height" multiplier="157:133" id="zQO-FE-7Yc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Varnig för farlig kurva" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMg-Bs-3w3">
+                        <rect key="frame" x="20" y="255" width="335" height="26"/>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="brJ-u1-0CZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="100" id="2sd-dV-Y3M"/>
+                <constraint firstItem="brJ-u1-0CZ" firstAttribute="centerX" secondItem="aMg-Bs-3w3" secondAttribute="centerX" id="AH0-Lt-Bdw"/>
+                <constraint firstItem="zjD-Kx-jcL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="JVb-e9-PVS"/>
+                <constraint firstAttribute="trailing" secondItem="aMg-Bs-3w3" secondAttribute="trailing" constant="20" id="Spe-Ht-Ygz"/>
+                <constraint firstItem="aMg-Bs-3w3" firstAttribute="top" secondItem="brJ-u1-0CZ" secondAttribute="bottom" constant="22" id="a0m-L3-VKz"/>
+                <constraint firstItem="aMg-Bs-3w3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="bC0-Ce-B5O"/>
+                <constraint firstAttribute="trailing" secondItem="zjD-Kx-jcL" secondAttribute="trailing" constant="20" id="iN0-bk-Rbx"/>
+                <constraint firstItem="zjD-Kx-jcL" firstAttribute="top" secondItem="aMg-Bs-3w3" secondAttribute="bottom" constant="26" id="uLI-Og-Bj5"/>
+                <constraint firstAttribute="bottom" secondItem="zjD-Kx-jcL" secondAttribute="bottom" id="z2h-1c-FUl"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="169" height="292"/>
+            <connections>
+                <outlet property="signHeadline" destination="aMg-Bs-3w3" id="MKb-1h-h1q"/>
+                <outlet property="signImage" destination="brJ-u1-0CZ" id="J8y-ZH-b3v"/>
+                <outlet property="signLabel" destination="zjD-Kx-jcL" id="Sh4-Jy-Jf5"/>
+            </connections>
+            <point key="canvasLocation" x="93.5" y="-5.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
