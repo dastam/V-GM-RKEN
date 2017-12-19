@@ -9,9 +9,11 @@
 import UIKit
 import UICircularProgressRing
 import Cheers
+import GoogleMobileAds
 
-class QuizStats: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class QuizStats: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, GADInterstitialDelegate {
     
+    var interstitial: GADInterstitial!
     
     @IBOutlet weak var restartButton: UIButton!
     @IBOutlet weak var resultsLabel: UILabel!
@@ -28,6 +30,14 @@ class QuizStats: UIViewController, UICollectionViewDataSource, UICollectionViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        Setting up Interstitial AD
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+        let request = GADRequest()
+        interstitial.load(request)
+        interstitial = createAndLoadInterstitial()
+        interstitial.delegate = self
+
+        
 //        Setting up confetti
         confetti.config.particle = .confetti
         confetti.config.colors = [UIColor.red, UIColor.cyan, UIColor.green, UIColor.yellow, UIColor.blue, UIColor.magenta, UIColor.orange]
@@ -42,17 +52,31 @@ class QuizStats: UIViewController, UICollectionViewDataSource, UICollectionViewD
         
         view.addSubview(confetti)
         awesomeLabel()
+        
+    }
+    
+    func topMostController() -> UIViewController {
+        var topController: UIViewController = UIApplication.shared.keyWindow!.rootViewController!
+        while (topController.presentedViewController != nil) {
+            topController = topController.presentedViewController!
+        }
+        return topController
     }
     
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        progressRing.ringStyle = .ontop
-        progressRing.innerCapStyle = .butt
-        progressRing.setProgress(value: CGFloat(scorePercentage) * 100, animationDuration: 1.5) {
-    
+        if interstitial.isReady && (needPractice.count > 0)  {
+            interstitial.present(fromRootViewController: topMostController())
+        } else {
+            print("Ad wasn't ready")
+            progressRing.ringStyle = .ontop
+            progressRing.innerCapStyle = .butt
+            progressRing.setProgress(value: CGFloat(scorePercentage) * 100, animationDuration: 1.5) {
+            }
         }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -94,6 +118,7 @@ class QuizStats: UIViewController, UICollectionViewDataSource, UICollectionViewD
         practiceLabel.text = needPractice[indexPath.row].text
     }
     
+//    Gets called when user has 100% accuracy.
     func awesomeLabel() {
         
         if needPractice.count == 0 {
@@ -102,6 +127,49 @@ class QuizStats: UIViewController, UICollectionViewDataSource, UICollectionViewD
             confetti.start()
         }
         
+    }
+    
+    func createAndLoadInterstitial() -> GADInterstitial {
+        var interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+        interstitial.delegate = self
+        interstitial.load(GADRequest())
+        return interstitial
+    }
+    
+    /// Tells the delegate an ad request succeeded.
+    func interstitialDidReceiveAd(_ ad: GADInterstitial) {
+        print("interstitialDidReceiveAd")
+    }
+    
+    /// Tells the delegate an ad request failed.
+    func interstitial(_ ad: GADInterstitial, didFailToReceiveAdWithError error: GADRequestError) {
+        print("interstitial:didFailToReceiveAdWithError: \(error.localizedDescription)")
+    }
+    
+    /// Tells the delegate that an interstitial will be presented.
+    func interstitialWillPresentScreen(_ ad: GADInterstitial) {
+        print("interstitialWillPresentScreen")
+    }
+    
+    /// Tells the delegate the interstitial is to be animated off the screen.
+    func interstitialWillDismissScreen(_ ad: GADInterstitial) {
+        print("interstitialWillDismissScreen")
+    }
+    
+    /// Tells the delegate the interstitial had been animated off the screen.
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
+        print("interstitialDidDismissScreen")
+        progressRing.ringStyle = .ontop
+        progressRing.innerCapStyle = .butt
+        progressRing.setProgress(value: CGFloat(scorePercentage) * 100, animationDuration: 1.5) {
+        }
+        interstitial = createAndLoadInterstitial()
+    }
+    
+    /// Tells the delegate that a user click will open another app
+    /// (such as the App Store), backgrounding the current app.
+    func interstitialWillLeaveApplication(_ ad: GADInterstitial) {
+        print("interstitialWillLeaveApplication")
     }
     
     

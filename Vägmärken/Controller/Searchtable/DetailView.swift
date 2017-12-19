@@ -8,10 +8,14 @@
 
 import UIKit
 import BulletinBoard
+import GoogleMobileAds
 
-class DetailView: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class DetailView: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, GADBannerViewDelegate{
 
     @IBOutlet weak var collectionView: UICollectionView!
+
+    
+    var bannerView: GADBannerView!
     
     var receivedData: Int?
     var passedSign = Signs(text: "", correctAnswer: #imageLiteral(resourceName: "a14"), signExpl: "")
@@ -35,6 +39,18 @@ class DetailView: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        bannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
+        self.view.addSubview(bannerView)
+        bannerView.frame = CGRect(x: 0.0,
+                                  y: UIApplication.shared.statusBarFrame.size.height,
+                                  width: bannerView.frame.width,
+                                  height: bannerView.frame.height)
+        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
+        let requestAD: GADRequest = GADRequest()
+        requestAD.testDevices = [kGADSimulatorID]
+        
         
         self.collectionView.isPagingEnabled = true
         self.collectionView?.frame = view.frame.insetBy(dx: -20.0, dy: 0.0)
@@ -48,6 +64,7 @@ class DetailView: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         self.view.addGestureRecognizer(panGesture)
         
     }
+    
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(false)

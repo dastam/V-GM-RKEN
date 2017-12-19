@@ -45,13 +45,20 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMJ-lg-uaJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="54"/>
+                    </view>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="brJ-u1-0CZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="100" id="2sd-dV-Y3M"/>
                 <constraint firstItem="brJ-u1-0CZ" firstAttribute="centerX" secondItem="aMg-Bs-3w3" secondAttribute="centerX" id="AH0-Lt-Bdw"/>
+                <constraint firstItem="SMJ-lg-uaJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="ARg-ZP-wgd"/>
+                <constraint firstItem="SMJ-lg-uaJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Bze-rq-bBz"/>
                 <constraint firstItem="zjD-Kx-jcL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="JVb-e9-PVS"/>
+                <constraint firstItem="brJ-u1-0CZ" firstAttribute="top" secondItem="SMJ-lg-uaJ" secondAttribute="bottom" constant="26" id="Jko-7m-3gF"/>
                 <constraint firstAttribute="trailing" secondItem="aMg-Bs-3w3" secondAttribute="trailing" constant="20" id="Spe-Ht-Ygz"/>
+                <constraint firstAttribute="trailing" secondItem="SMJ-lg-uaJ" secondAttribute="trailing" id="XcF-zp-dwF"/>
                 <constraint firstItem="aMg-Bs-3w3" firstAttribute="top" secondItem="brJ-u1-0CZ" secondAttribute="bottom" constant="22" id="a0m-L3-VKz"/>
                 <constraint firstItem="aMg-Bs-3w3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="bC0-Ce-B5O"/>
                 <constraint firstAttribute="trailing" secondItem="zjD-Kx-jcL" secondAttribute="trailing" constant="20" id="iN0-bk-Rbx"/>
@@ -61,6 +68,7 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="169" height="292"/>
             <connections>
+                <outlet property="bannerView" destination="SMJ-lg-uaJ" id="jjc-Ae-6JO"/>
                 <outlet property="signHeadline" destination="aMg-Bs-3w3" id="MKb-1h-h1q"/>
                 <outlet property="signImage" destination="brJ-u1-0CZ" id="J8y-ZH-b3v"/>
                 <outlet property="signLabel" destination="zjD-Kx-jcL" id="Sh4-Jy-Jf5"/>

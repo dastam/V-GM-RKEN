@@ -24,6 +24,7 @@ extension UIImageView {
 
 class ViewController: UIViewController {
     
+    
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
@@ -54,7 +55,9 @@ class ViewController: UIViewController {
 
         nextQuestion()
         
+        
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -141,12 +144,16 @@ class ViewController: UIViewController {
             }
             
             self.performSegue(withIdentifier: "showStats", sender: self)
-            
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.8, execute: {
-//                self.alertStart()
-//            })
-       
         }
+//
+    }
+    
+    func topMostController() -> UIViewController {
+        var topController: UIViewController = UIApplication.shared.keyWindow!.rootViewController!
+        while (topController.presentedViewController != nil) {
+            topController = topController.presentedViewController!
+        }
+        return topController
     }
     
     @IBAction func button1pressed(_ sender: UIButton) {
@@ -177,56 +184,20 @@ class ViewController: UIViewController {
         }
         
         checkAnswer()
+    
         updateUI()
-  
+    
         }
         
-//        questionNumber += 1
-        
-//        nextQuestion()
-
-    
-    func startOver() {
-        
-        
-        for button in self.buttons {
-            button.isEnabled = true
-        }
-        
-        questionNumber = 0
-        score = 0
-        nextQuestion()
-        
-        
-    }
-    
-    func alertStart() {
-        
-        let alert =  UIAlertController(title: "Snyggt!", message: "Du har svarat på alla frågor, vill du börja om?", preferredStyle: .alert)
-        
-        let restartAction = UIAlertAction(title: "Börja om", style: .default, handler: { (UIAlertAction) in
-            self.startOver()
-        })
-        
-        alert.addAction(restartAction)
-        
-        
-        present(alert, animated: true, completion: nil)
-
-        
-        allQuestions.shuffle()
-    }
-
     func delayWithSeconds(_ seconds: Double, completion: @escaping () -> ()) {
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
             completion()
         }
     }
     
-    
-    
 
-}
+    
+    }
 
 
 

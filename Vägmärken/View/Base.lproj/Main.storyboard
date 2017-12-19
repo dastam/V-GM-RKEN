@@ -26,7 +26,7 @@
         <!--Välj Kategorier-->
         <scene sceneID="x3u-K5-ICT">
             <objects>
-                <viewController id="2lt-dj-fkP" customClass="SelectQuizViewController" customModule="Va_gma_rken___Quiz_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2lt-dj-fkP" customClass="SelectQuizViewController" customModule="Va_gma_rken" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ODt-dg-J4C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -81,7 +81,7 @@
         <!--Quiz-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Va_gma_rken___Quiz_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Va_gma_rken" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -198,7 +198,7 @@
         <!--Resultat-->
         <scene sceneID="m9h-FM-TGm">
             <objects>
-                <viewController title="Resultat" id="mKp-Mv-NuU" customClass="QuizStats" customModule="Va_gma_rken___Quiz_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Resultat" id="mKp-Mv-NuU" customClass="QuizStats" customModule="Va_gma_rken" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleAspectFill" id="lWB-79-HCh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -252,7 +252,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="signInfo" id="4PX-E2-aZ7" customClass="signInfoCell" customModule="Va_gma_rken___Quiz_" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="signInfo" id="4PX-E2-aZ7" customClass="signInfoCell" customModule="Va_gma_rken" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -326,7 +326,7 @@
         <!--Result-->
         <scene sceneID="s2C-e2-9bB">
             <objects>
-                <viewController id="ady-6a-zpe" customClass="QResult" customModule="Va_gma_rken___Quiz_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ady-6a-zpe" customClass="QResult" customModule="Va_gma_rken" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4aG-gS-2r1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -377,7 +377,7 @@
         <!--Quiz Welcome-->
         <scene sceneID="7gS-VB-rO7">
             <objects>
-                <viewController id="Hnr-TV-gG7" customClass="QuizWelcome" customModule="Va_gma_rken___Quiz_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Hnr-TV-gG7" customClass="QuizWelcome" customModule="Va_gma_rken" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1lG-Dm-AHf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -446,7 +446,7 @@
         <!--Vägmärken-->
         <scene sceneID="TtD-I7-dEu">
             <objects>
-                <viewController storyboardIdentifier="SearchViewController" id="rhy-Zm-jrq" customClass="SearchViewController" customModule="Va_gma_rken___Quiz_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchViewController" id="rhy-Zm-jrq" customClass="SearchViewController" customModule="Va_gma_rken" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wFg-WN-1P8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -479,7 +479,7 @@
         <!--2ndSearchViewController-->
         <scene sceneID="AAR-0b-zz9">
             <objects>
-                <viewController id="Dqd-nG-Tmj" userLabel="2ndSearchViewController" customClass="SecondSearchViewController" customModule="Va_gma_rken___Quiz_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Dqd-nG-Tmj" userLabel="2ndSearchViewController" customClass="SecondSearchViewController" customModule="Va_gma_rken" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EEW-Pv-7H2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -522,7 +522,7 @@
         <!--Detail View-->
         <scene sceneID="JFF-T5-H8L">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="TRn-nd-Tjy" customClass="DetailView" customModule="Va_gma_rken___Quiz_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="TRn-nd-Tjy" customClass="DetailView" customModule="Va_gma_rken" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="13L-cv-Um1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -545,10 +545,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="iep-0R-yUl" firstAttribute="top" secondItem="13L-cv-Um1" secondAttribute="top" id="9Hd-Fb-Yct"/>
-                            <constraint firstItem="iep-0R-yUl" firstAttribute="trailing" secondItem="OQO-yq-4MR" secondAttribute="trailing" id="akP-dO-Lkw"/>
-                            <constraint firstItem="iep-0R-yUl" firstAttribute="bottom" secondItem="OQO-yq-4MR" secondAttribute="bottom" id="cNy-hS-UB4"/>
-                            <constraint firstItem="iep-0R-yUl" firstAttribute="leading" secondItem="OQO-yq-4MR" secondAttribute="leading" id="uPe-yC-qCD"/>
+                            <constraint firstItem="iep-0R-yUl" firstAttribute="bottom" secondItem="OQO-yq-4MR" secondAttribute="bottom" id="4af-bf-OWb"/>
+                            <constraint firstItem="iep-0R-yUl" firstAttribute="trailing" secondItem="OQO-yq-4MR" secondAttribute="trailing" id="X3a-Qe-92d"/>
+                            <constraint firstItem="iep-0R-yUl" firstAttribute="top" secondItem="OQO-yq-4MR" secondAttribute="top" constant="-20" id="bhj-1x-tfE"/>
+                            <constraint firstItem="iep-0R-yUl" firstAttribute="leading" secondItem="OQO-yq-4MR" secondAttribute="leading" id="qAM-Kv-FoN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OQO-yq-4MR"/>
                     </view>
@@ -558,7 +558,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MXF-tZ-iBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2929" y="-734"/>
+            <point key="canvasLocation" x="2928.8000000000002" y="-734.48275862068976"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SHw-0r-KJ2">

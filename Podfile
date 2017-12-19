@@ -11,4 +11,5 @@ pod 'UICircularProgressRing'
 pod 'ViewAnimator'
 pod 'BulletinBoard'
 pod 'Cheers'
+pod 'Google-Mobile-Ads-SDK'
 end

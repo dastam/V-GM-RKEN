@@ -53,6 +53,10 @@ Licensed under the **MIT** license
 > SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
+## Google-Mobile-Ads-SDK
+
+Copyright 2017 Google
+
 ## UICircularProgressRing
 
 Copyright (c) 2017 Luis Padron
