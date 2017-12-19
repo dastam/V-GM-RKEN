@@ -19,12 +19,12 @@
 		C24FD01F1F9D170A001BA0D5 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD01E1F9D170A001BA0D5 /* QuestionBank.swift */; };
 		C24FD02A1F9D5744001BA0D5 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C24FD0281F9D5744001BA0D5 /* ProgressHUD.m */; };
 		C24FD02B1F9D5744001BA0D5 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C24FD0291F9D5744001BA0D5 /* ProgressHUD.bundle */; };
-		C24FD02D1FA14DB9001BA0D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C24FD02C1FA14DB9001BA0D5 /* Assets.xcassets */; };
 		C24FD0801FACD7A0001BA0D5 /* CatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD07E1FACD7A0001BA0D5 /* CatTableViewCell.swift */; };
 		C24FD0811FACD7A0001BA0D5 /* CatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C24FD07F1FACD7A0001BA0D5 /* CatTableViewCell.xib */; };
 		C24FD0851FACE170001BA0D5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD0841FACE170001BA0D5 /* SearchViewController.swift */; };
 		C24FD0871FACF427001BA0D5 /* SecondSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24FD0861FACF427001BA0D5 /* SecondSearchViewController.swift */; };
 		C2557D411FE3489800EC8571 /* Cheers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2557D421FE3489800EC8571 /* Cheers.framework */; };
+		C263C7D31FE98BBE0070E943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C263C7D21FE98BBD0070E943 /* Assets.xcassets */; };
 		C27224471FB90527000EED55 /* SelectQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27224461FB90527000EED55 /* SelectQuizViewController.swift */; };
 		C27224491FB90E41000EED55 /* QuestionStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27224481FB90E41000EED55 /* QuestionStruct.swift */; };
 		C272244B1FB90EA2000EED55 /* QuestionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = C272244A1FB90EA2000EED55 /* QuestionArray.swift */; };
@@ -66,13 +66,13 @@
 		C24FD0271F9D5743001BA0D5 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		C24FD0281F9D5744001BA0D5 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		C24FD0291F9D5744001BA0D5 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
-		C24FD02C1FA14DB9001BA0D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C24FD07E1FACD7A0001BA0D5 /* CatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTableViewCell.swift; sourceTree = "<group>"; };
 		C24FD07F1FACD7A0001BA0D5 /* CatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatTableViewCell.xib; sourceTree = "<group>"; };
 		C24FD0841FACE170001BA0D5 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C24FD0861FACF427001BA0D5 /* SecondSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSearchViewController.swift; sourceTree = "<group>"; };
 		C2557D401FE3447800EC8571 /* SAConfettiView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SAConfettiView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2557D421FE3489800EC8571 /* Cheers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cheers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C263C7D21FE98BBD0070E943 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C27224461FB90527000EED55 /* SelectQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuizViewController.swift; sourceTree = "<group>"; };
 		C27224481FB90E41000EED55 /* QuestionStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionStruct.swift; sourceTree = "<group>"; };
 		C272244A1FB90EA2000EED55 /* QuestionArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionArray.swift; sourceTree = "<group>"; };
@@ -186,7 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				C24619F41F8EA2B800F1444A /* Main.storyboard */,
-				C24FD02C1FA14DB9001BA0D5 /* Assets.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -208,6 +207,7 @@
 				C24FD0281F9D5744001BA0D5 /* ProgressHUD.m */,
 				C24619F91F8EA2B800F1444A /* LaunchScreen.storyboard */,
 				C24619FC1F8EA2B800F1444A /* Info.plist */,
+				C263C7D21FE98BBD0070E943 /* Assets.xcassets */,
 				C24FD0261F9D5743001BA0D5 /* Vägmärken - Quiz!-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
@@ -314,9 +314,9 @@
 				C2729F911FDC179600D9A71B /* CollectionViewCell.xib in Resources */,
 				C24619FB1F8EA2B800F1444A /* LaunchScreen.storyboard in Resources */,
 				C2461A031F9637ED00F1444A /* Default-568h@2x.png in Resources */,
+				C263C7D31FE98BBE0070E943 /* Assets.xcassets in Resources */,
 				C24FD02B1F9D5744001BA0D5 /* ProgressHUD.bundle in Resources */,
 				C24619F61F8EA2B800F1444A /* Main.storyboard in Resources */,
-				C24FD02D1FA14DB9001BA0D5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,7 +558,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/Vägmärken-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -576,7 +576,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Supporting Files/Vägmärken-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

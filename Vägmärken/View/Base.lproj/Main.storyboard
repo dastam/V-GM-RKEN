@@ -474,7 +474,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mgN-EN-7Dd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1389.5999999999999" y="-734.48275862068976"/>
+            <point key="canvasLocation" x="940" y="-734"/>
         </scene>
         <!--2ndSearchViewController-->
         <scene sceneID="AAR-0b-zz9">
@@ -491,7 +491,7 @@
                                 <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" preferredMaxLayoutWidth="370" id="SA1-XT-8DP">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="backgroundColor" red="0.5500416604395445" green="0.5500416604395445" blue="0.5500416604395445" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <string key="text">Varningsmärken varnar för olika typer av faror och betyder att du ska vara extra uppmärksam och försiktig. Motivet på varningsmärket visar vilken fara som avses.</string>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -517,7 +517,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BoS-3x-o1m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2077.5999999999999" y="-734.48275862068976"/>
+            <point key="canvasLocation" x="1889" y="-1095"/>
         </scene>
         <!--Detail View-->
         <scene sceneID="JFF-T5-H8L">
@@ -558,7 +558,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MXF-tZ-iBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2928.8000000000002" y="-734.48275862068976"/>
+            <point key="canvasLocation" x="2838" y="-734"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SHw-0r-KJ2">
@@ -608,6 +608,6 @@
         <image name="quizBild" width="1067" height="1067"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zDK-E2-Jfi"/>
+        <segue reference="4vQ-uC-5kc"/>
     </inferredMetricsTieBreakers>
 </document>

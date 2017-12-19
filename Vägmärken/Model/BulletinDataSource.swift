@@ -24,7 +24,7 @@ enum BulletinDataSource {
      * This creates a `FeedbackPageBulletinItem` with: a title, an image, a description text and
      * and action button.
      *
-     * The action button presents the next item (the textfield page).
+     * The alternative button disables the introPage for ever!
      */
     
     static func makeIntroPage() -> PageBulletinItem {
@@ -37,7 +37,7 @@ enum BulletinDataSource {
         - Dra till vänster/höger för att gå tillbaka respektive till nästa trafikskylt.
         """
         page.actionButtonTitle = "Stäng"
-        page.alternativeButtonTitle = "Visa inte detta mer"
+        page.alternativeButtonTitle = "Visa aldrig mer"
         
         page.isDismissable = true
         
