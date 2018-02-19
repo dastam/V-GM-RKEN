@@ -31,7 +31,7 @@ class QuizStats: UIViewController, UICollectionViewDataSource, UICollectionViewD
         super.viewDidLoad()
         
 //        Setting up Interstitial AD
-        interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-9345172386669198/5740567069")
         let request = GADRequest()
         interstitial.load(request)
         interstitial = createAndLoadInterstitial()
@@ -39,7 +39,7 @@ class QuizStats: UIViewController, UICollectionViewDataSource, UICollectionViewD
 
         
 //        Setting up confetti
-        confetti.config.particle = .confetti
+        confetti.config.particle = .confetti(allowedShapes: Particle.ConfettiShape.all)
         confetti.config.colors = [UIColor.red, UIColor.cyan, UIColor.green, UIColor.yellow, UIColor.blue, UIColor.magenta, UIColor.orange]
         confetti.frame = view.frame
         
@@ -52,7 +52,7 @@ class QuizStats: UIViewController, UICollectionViewDataSource, UICollectionViewD
         
         view.addSubview(confetti)
         awesomeLabel()
-        
+
     }
     
     func topMostController() -> UIViewController {
@@ -130,7 +130,7 @@ class QuizStats: UIViewController, UICollectionViewDataSource, UICollectionViewD
     }
     
     func createAndLoadInterstitial() -> GADInterstitial {
-        let interstitial = GADInterstitial(adUnitID: "ca-app-pub-3940256099942544/4411468910")
+        let interstitial = GADInterstitial(adUnitID: "ca-app-pub-9345172386669198/5740567069")
         interstitial.delegate = self
         interstitial.load(GADRequest())
         return interstitial

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OZC-LO-30l">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OZC-LO-30l">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LPd-Xa-tcw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1391" y="27"/>
+            <point key="canvasLocation" x="940" y="-31"/>
         </scene>
         <!--Quiz-->
         <scene sceneID="tne-QT-ifu">
@@ -87,13 +87,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ap9-Um-CBx">
-                                <rect key="frame" x="15" y="79" width="345" height="514"/>
+                                <rect key="frame" x="0.0" y="79" width="1056" height="514"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5QQ-i5-i8c">
-                                        <rect key="frame" x="-15" y="0.0" width="345" height="154.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1056" height="154.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Varning för farlig kurva " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="iw8-yo-LqX">
-                                                <rect key="frame" x="0.0" y="0.0" width="345" height="154.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1056" height="154.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -101,10 +101,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="b4B-io-oiz">
-                                        <rect key="frame" x="-15" y="179.5" width="343" height="155"/>
+                                        <rect key="frame" x="0.0" y="179.5" width="1054" height="155"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYM-Qv-Hsq">
-                                                <rect key="frame" x="0.0" y="0.0" width="166.5" height="155"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="522" height="155"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                                 </accessibility>
@@ -120,7 +120,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llj-d6-WBr">
-                                                <rect key="frame" x="192.5" y="0.0" width="166.5" height="155"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="522" height="155"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                                 </accessibility>
@@ -138,10 +138,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="B8l-PT-yVE">
-                                        <rect key="frame" x="-15" y="359.5" width="345" height="154.5"/>
+                                        <rect key="frame" x="0.0" y="359.5" width="1056" height="154.5"/>
                                         <subviews>
                                             <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwy-Xl-Ngb">
-                                                <rect key="frame" x="0.0" y="0.0" width="167.5" height="154.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="523" height="154.5"/>
                                                 <state key="normal" title="button3" image="a1-1"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="self.imageView.contentMode">
@@ -154,7 +154,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZr-ro-uHB">
-                                                <rect key="frame" x="192.5" y="0.0" width="167.5" height="154.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="523" height="154.5"/>
                                                 <state key="normal" title="button4" image="a1-1"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="self.imageView.contentMode">
@@ -193,7 +193,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2079" y="27"/>
+            <point key="canvasLocation" x="1876" y="-31"/>
         </scene>
         <!--Resultat-->
         <scene sceneID="m9h-FM-TGm">
@@ -321,7 +321,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dbv-GS-1AE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2837.5999999999999" y="26.53673163418291"/>
+            <point key="canvasLocation" x="2838" y="-31"/>
         </scene>
         <!--Result-->
         <scene sceneID="s2C-e2-9bB">
@@ -372,56 +372,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lvd-wM-c4h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2077.5999999999999" y="846.9265367316342"/>
-        </scene>
-        <!--Quiz Welcome-->
-        <scene sceneID="7gS-VB-rO7">
-            <objects>
-                <viewController id="Hnr-TV-gG7" customClass="QuizWelcome" customModule="Va_gma_rken" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1lG-Dm-AHf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quizBild" translatesAutoresizingMaskIntoConstraints="NO" id="hlH-CE-xHA">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
-                                </accessibility>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RjN-zj-nz3">
-                                <rect key="frame" x="96" y="565" width="182" height="46"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="46" id="3wb-Zk-4lN"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="182" id="agR-Oy-3ma"/>
-                                </constraints>
-                                <state key="normal" title="GÅ VIDARE!">
-                                    <color key="titleColor" red="0.98809567934867526" green="0.99489290589891954" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="continueButton:" destination="Hnr-TV-gG7" eventType="touchUpInside" id="TNW-rP-EFA"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="NxB-6J-DIb" firstAttribute="bottom" secondItem="RjN-zj-nz3" secondAttribute="bottom" constant="7" id="6cd-kV-Fwr"/>
-                            <constraint firstItem="RjN-zj-nz3" firstAttribute="centerX" secondItem="1lG-Dm-AHf" secondAttribute="centerX" id="9V6-vm-fhC"/>
-                            <constraint firstItem="hlH-CE-xHA" firstAttribute="top" secondItem="1lG-Dm-AHf" secondAttribute="top" id="ISN-w3-dkv"/>
-                            <constraint firstItem="hlH-CE-xHA" firstAttribute="trailing" secondItem="NxB-6J-DIb" secondAttribute="trailing" id="IXe-NI-fBC"/>
-                            <constraint firstItem="hlH-CE-xHA" firstAttribute="leading" secondItem="NxB-6J-DIb" secondAttribute="leading" id="rIW-f4-Fhl"/>
-                            <constraint firstItem="hlH-CE-xHA" firstAttribute="bottom" secondItem="NxB-6J-DIb" secondAttribute="bottom" id="uVr-IQ-iRv"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="NxB-6J-DIb"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="OiV-32-pCi"/>
-                    <connections>
-                        <outlet property="continueButton" destination="RjN-zj-nz3" id="yVG-d8-ndT"/>
-                        <segue destination="2lt-dj-fkP" kind="show" identifier="showQuiz" id="aaL-At-4qr"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cd4-6n-Mzi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="698" y="27"/>
+            <point key="canvasLocation" x="2358" y="739"/>
         </scene>
         <!--Sök-->
         <scene sceneID="bJi-2y-0rw">
@@ -517,7 +468,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BoS-3x-o1m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1889" y="-1095"/>
+            <point key="canvasLocation" x="1876" y="-1098"/>
         </scene>
         <!--Detail View-->
         <scene sceneID="JFF-T5-H8L">
@@ -591,12 +542,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Hnr-TV-gG7" kind="relationship" relationship="rootViewController" id="m8U-uF-8Iv"/>
+                        <segue destination="2lt-dj-fkP" kind="relationship" relationship="rootViewController" id="s2b-Ha-lN5"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KaM-2W-V5H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-31" y="27"/>
+            <point key="canvasLocation" x="-31" y="-31"/>
         </scene>
     </scenes>
     <resources>
@@ -605,7 +556,6 @@
         <image name="check-mark-button" width="512" height="512"/>
         <image name="ic_search_36pt" width="36" height="36"/>
         <image name="lightbulb_outline_36pt" width="36" height="36"/>
-        <image name="quizBild" width="1067" height="1067"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="4vQ-uC-5kc"/>
